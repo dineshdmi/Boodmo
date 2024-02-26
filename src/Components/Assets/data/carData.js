@@ -10,11 +10,11 @@ import img06 from "../Axle.jpg";
 const carData = [
   {
     id: 1,
-    brand: "Tesla",
+    brand: "Mahima Enterprise",
     rating: 112,
     ProductName: "Alternator",
     imgUrl: img01,
-    model: "Model 3",
+    model: "Alternator",
     price: 50,
     speed: "20kmpl",
     gps: "GPS Navigation",
@@ -26,11 +26,11 @@ const carData = [
 
   {
     id: 2,
-    brand: "Toyota",
+    brand: "Sweden SKF",
     rating: 102,
     ProductName: "Wheel bearings",
     imgUrl: img02,
-    model: "Model-2022",
+    model: "Wheel bearings",
     price: 50,
     speed: "20kmpl",
     gps: "GPS Navigation",
@@ -42,11 +42,11 @@ const carData = [
 
   {
     id: 3,
-    brand: "BMW",
+    brand: "Apollo radiator",
     rating: 132,
     ProductName: "Radiator",
     imgUrl: img03,
-    model: "Model-2022",
+    model: "Radiator",
     price: 65,
     speed: "20kmpl",
     gps: "GPS Navigation",
@@ -58,11 +58,11 @@ const carData = [
 
   {
     id: 4,
-    brand: "Nissan",
+    brand: "Fox Racing",
     rating: 102,
     ProductName: "Shock-Up",
     imgUrl: img04,
-    model: "Model-2022",
+    model: "Shock-Up",
     price: 70,
     speed: "20kmpl",
     gps: "GPS Navigation",
@@ -74,11 +74,11 @@ const carData = [
 
   {
     id: 5,
-    brand: "Ferrari",
+    brand: "EBC Brakes",
     rating: 94,
     ProductName: "Brakes ",
     imgUrl: img05,
-    model: "Model-2022",
+    model: "Brakes",
     price: 45,
     speed: "20kmpl",
     gps: "GPS Navigation",
@@ -90,11 +90,11 @@ const carData = [
 
   {
     id: 6,
-    brand: "Mercedes",
+    brand: "Spicer axle",
     rating: 119,
     ProductName: "Axle ",
     imgUrl: img06,
-    model: "Model-2022",
+    model: "Axle",
     price: 85,
     speed: "20kmpl",
     gps: "GPS Navigation",

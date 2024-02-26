@@ -1,23 +1,23 @@
 // Cart.js
-
 import React from 'react';
-// import './Cart.css';
+// import { useCart } from './CartContext';
 
 const Cart = () => {
-    return (
-        <div className="cart">
-            <h2 className="section-title">Your Cart</h2>
-            <div className="cart-items">
-                {/* Display cart items here */}
-                {/* Example:
-        <div className="cart-item">
-          <h3>Product Name</h3>
-          <p>$10</p>
-        </div>
-        */}
-            </div>
-        </div>
-    );
+  // const { state } = useCart();
+  // const { cartItems } = state;
+
+  return (
+    <div>
+      <h2>Shopping Cart</h2>
+      {/* <ul>
+        {cartItems.map((item) => (
+          <li key={item.productId}>
+            <p>{item.carName}</p>
+          </li>
+        ))}
+      </ul> */}
+    </div>
+  );
 };
 
 export default Cart;

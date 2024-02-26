@@ -19,7 +19,6 @@ const CarItem = (props) => {
             <div className="car-item-img">
                 <img src={imgUrl} alt="" className="car-image" />
             </div>
-
             <div className="car-item-content">
                 <h4 className="car-title">{carName}</h4>
                 <h6 className="rent-price">

@@ -1,7 +1,7 @@
-import React, {  } from 'react';
+import React, { } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import BlogList from '../Blog/BlogList';
-import Data  from '../Assets/data/carData';
+import Data from '../Assets/data/carData';
 import CarItem from '../CartItem/Cartitem';
 import company from '../Assets/logo.png';
 import { TfiMoreAlt } from 'react-icons/tfi';
