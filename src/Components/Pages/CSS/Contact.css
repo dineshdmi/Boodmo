@@ -11,6 +11,9 @@
     text-align: left;
     margin-top: 2%;
 }
+.card h3 {
+    margin-top: -1%;
+}
 
 .warning {
     margin: 20px 0;
@@ -20,6 +23,7 @@
     border: 1px solid #ffeeba;
     border-radius: 4px;
 }
+
 
 .container {
     display: flex;
@@ -31,9 +35,15 @@
 .contact-info {
     flex: 1;
     margin-top: 10%;
+    margin-left: 1%;
+}
+.contact-info h2{
+    margin-left: 4%;
+    font-size: 100%;
+}
+.contact-info li{
     margin-left: 10%;
 }
-
 .contact-form {
     flex: 1;
     background-color: rgba(79, 161, 208, 0.5);
@@ -41,6 +51,7 @@
     border-radius: 8px;
     text-align: center;
     width: 80;
+    margin-left: 3%;
 }
 
 .contact-form h2 {
@@ -48,12 +59,16 @@
     color: #333;
     justify-content: center;
     text-align: center;
+    margin-left: 4%;
+    font-size: 140%;
 }
 
 .contact-form label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
+    color: #0f0f0f;
+    margin-left: -90%;
+    font-weight: 600;
     
 }
 

@@ -1,0 +1,46 @@
+/* AntiBriberyPolicy.css */
+
+.anti-bribery-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+h1 {
+color: #045ab1;
+    justify-content: center;
+    text-align: center;
+    font-size: 170%;
+    margin-left: 5%;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: start;
+        color: #060606;
+        font-size: 100%;
+        font-weight: 600;
+}
+
+h3 {
+    color: #333;
+    font-weight: 400;
+    margin-top: -2.5%;
+    font-size: 100%;
+    margin-left: 2.5%;
+}
+
+p {
+    color: #555;
+    line-height: 1.4;
+    margin-top: 1%;
+    margin-left: 4%;
+}
+
+.disclaimer {
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+}

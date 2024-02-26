@@ -1,8 +1,8 @@
 import React, {  } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import BlogList from '../Blog/BlogList';
-import carData from '../Assets/data/carData';
-import CarItem from '../CartItem/Cartitem.jsx';
+import Data  from '../Assets/data/carData';
+import CarItem from '../CartItem/Cartitem';
 import company from '../Assets/logo.png';
 import { TfiMoreAlt } from 'react-icons/tfi';
 import './CSS/Product.css';
@@ -35,12 +35,12 @@ class ProductList extends React.Component {
                                 <h2 className="section-title">Hot Offers</h2>
                             </Col>
 
-                            {carData.slice(0, displayedProducts).map((item) => (
+                            {Data.slice(0, displayedProducts).map((item) => (
                                 <CarItem item={item} key={item.id} />
                             ))}
                         </Row>
                     </Container>
-                    {displayedProducts < carData.length && (
+                    {displayedProducts < Data.length && (
                         <Row>
                             <Col lg="12" className="text-center mt-80">
                                 <TfiMoreAlt className="load-more" onClick={this.handleLoadMore}>

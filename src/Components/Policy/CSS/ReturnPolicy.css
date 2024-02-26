@@ -1,35 +1,57 @@
-/* ReturnPolicy.css */
-
 .return-policy-container {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 50px;
+   
+    padding: 20px;
 }
 
-.section-title {
-    color: #333;
+.return-policy-content {
+    margin-top: -6%;
+    padding: 10%;
 }
 
-.policy-section {
-    margin-bottom: 20px;
-}
-.policy-content {
-    color: #555;
-}
-
-.policy-divider {
-    margin: 20px 0;
-    margin-top: 0%;
-    border: none;
-    /* Add this line to remove the underline */
-}
-
-/* Additional styles for h2 in PolicySection */
-.return-policy-section h2 {
-color: rgb(128, 113, 213);
-    margin-bottom: 10px;
+.return-policy-content h3 {
+    font-size: 100%;
     font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+
+}
+
+h1.return-policy-title {
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 140%;
+    color: #045ab1;
+}
+
+h2 {
+    color: #045ab1;
+    margin-left: -80%;
+    font-size: 170%;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+    margin-top: 1%;
+}
+
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .return-policy-container {
+        padding: 10px;
+    }
+
+    h1.return-policy-title {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
 }

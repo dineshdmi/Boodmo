@@ -1,55 +1,86 @@
 /* Privacy_Policy.css */
 
-.privacy-policy-container {
-    width: 80%;
-        margin: 0 auto;
-        margin-top: 30px;
-        padding: 50px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
 }
 
-.privacy-policy-title {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
+.privacy-terms-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.privacy-policy-section {
-    margin-bottom: 20px;
-}
-
-
-.privacy-policy-divider {
+.top-image {
+    width: 10%;
+    max-width: 150px;
+    height: auto;
     margin: 20px 0;
-    border: none;
-    border-top: 1px solid #080808;
-    /* Add a border-top for division */
 }
 
-.privacy-point {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-left: 80px;
-}
-
-.check-icon {
-    margin-right: 10px;
-    color: rgb(9, 9, 9);
-}
-
-.privacy-policy-section-border {
-    margin-top: 20px;
-    border-top: 1px solid #ddd;
-}
-
-/* Additional styles for h2 in PolicySection */
-.privacy-policy-section h2 {
-    color: rgb(126, 104, 247);
-    margin-bottom: 10px;
+.privacy-terms-container h2 {
+    color: #045ab1;
+    text-align: center;
     font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    margin-bottom: 40px;
+    margin-left: 6%;
+    text-decoration: underline;
+    font-size: 170%;
 }
-.privacy-policy-content strong{
-    color: rgb(104, 100, 100);
+
+.privacy-terms-content {
+    text-align: left;
+}
+
+.privacy-terms-content p {
+    margin-bottom: 15px;
+}
+
+.privacy-terms-content ul {
+    list-style-type: disc;
+    margin-left: 90px;
+    margin-bottom: 15px;
+}
+
+.privacy-terms-content h3 {
+    color: #1026b4;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.privacy-terms-content h4 {
+    color: #333;
+    margin-top: 15px;
+}
+
+.privacy-terms-content hr {
+    border: 0;
+    height: 1px;
+    background-color: #080808;
+    margin-bottom: 20px;
+}
+
+.privacy-terms-content h6 {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.custom-copyright-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .privacy-terms-container {
+        width: 90%;
+    }
+
+    .top-image {
+        max-width: 100%;
+    }
 }

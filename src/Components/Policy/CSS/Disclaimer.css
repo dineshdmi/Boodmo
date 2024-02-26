@@ -1,0 +1,91 @@
+/* Disclaimer.css */
+
+/* Container Styles */
+.custom-disclaimer-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Content Styles */
+.custom-disclaimer-content {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    
+}
+
+.custom-disclaimer-content h2 {
+    color: #045ab1;
+    justify-content: center;
+    text-align: center;
+    font-size: 170%;
+    margin-left: 5%;
+        font-weight: 600;
+    text-decoration: underline;
+}
+
+.custom-disclaimer-content ul {
+    list-style-type: none;
+    padding: 1%;
+    margin-left: 1%;
+}
+
+.custom-disclaimer-content li {
+    margin-bottom: 10px;
+}
+
+/* Icon Styles */
+.custom-check-icon {
+    color: #0d0d0d;
+}
+
+/* Recommendations Container Styles */
+.custom-recommendations-container {
+    margin-top: 20px;
+}
+
+/* Recommendations Content Styles */
+.custom-recommendations-content {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.custom-recommendations-content h3 {
+    color: #060606;
+    font-size: 100%;
+    font-weight: 600;
+    margin-top: -5%;
+}
+
+.custom-recommendations-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.custom-recommendations-content li {
+    margin-bottom: 10px;
+    margin-left: 1.6%;
+}
+.custom-recommendation-point{
+    width: 120%;
+}
+/* Copyright Text Styles */
+.custom-copyright-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+
+    /* Adjust styles for smaller screens */
+    .custom-disclaimer-container {
+        padding: 10px;
+    }
+}
+
+.custom-disclaimer-container,
+.custom-recommendations-container {
+    width: 80%;
+}

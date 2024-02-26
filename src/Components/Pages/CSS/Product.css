@@ -6,6 +6,15 @@
     justify-content: space-around;
 }
 
+.section-title {
+    font-size: 180%;
+    color: #0b0b0b;
+    justify-content: center;
+    text-align: center;
+    margin-left: 4%;
+    font-weight: 600;
+}
+
 .product-card {
     width: 250px;
     margin: 20px;
@@ -30,6 +39,7 @@
 .product-card p {
     margin-bottom: 10px;
 }
+
 .load-more {
     cursor: pointer;
     font-size: 38px;
@@ -44,19 +54,22 @@
     color: #0056b3;
     /* Adjust the hover color as needed */
 }
+
 /* Optional: Add hover effect */
 .product-card:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
 }
-.section-title{
+
+.section-title {
     justify-content: center;
     text-align: center;
-    
+
 }
+
 .blog__item img:hover,
 .car__item img:hover {
     transform: scale(1.1);
     /* You can adjust the scale value as needed */
-    transition: transform 0.3s ease;    
+    transition: transform 0.3s ease;
 }

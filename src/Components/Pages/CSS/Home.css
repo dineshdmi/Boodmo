@@ -11,7 +11,22 @@ p {
 body {
     font-family: 'Arial', sans-serif;
 }
+.carousel-slide {
+    position: relative;
+    width: 100%;
+}
 
+.carousel-video {
+    width: 100%;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 /* Mobile First Styles */
 .your-component {
     max-width: 100%;
@@ -256,3 +271,9 @@ header {
         transform: translateX(0);
     }
 }
+@media screen and (max-width: 768px) {
+    .carousel-text {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
+}   

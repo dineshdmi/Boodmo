@@ -1,5 +1,6 @@
 import React from 'react';
-import company from '../Assets/logo.png'
+// import company from '../Assets/logo.png'
+// import wall from '../Assets/wall.jpg'
 import bosch from '../Assets/bosch.jpg';
 import motherson from '../Assets/motherson.jpg';
 import igb from '../Assets/igb.jpg';
@@ -13,10 +14,15 @@ import wide from '../Assets/wide.jpg'
 import logo from '../Assets/free.jpg'
 import logo1 from '../Assets/downloadsecure.jpg'
 import logo2 from '../Assets/available.jpg'
-import './CSS/Home.css'; // Create this CSS file for styling
 import { Container, Row, Col } from "reactstrap";
 import aboutImg from "../Assets/mech1.jpg";
 import { useEffect, useState } from 'react';
+import './CSS/Home.css'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import vedio1 from '../Assets/video (2160p).mp4'
+import vedio2 from '../Assets/167659 (720p).mp4'
 
 
 
@@ -34,11 +40,37 @@ const Home = ({ aboutClass }) => {
 
   //   return () => clearTimeout(timeoutId); // Cleanup on component unmount
   // }, []);
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,         // Enable autoplay
+    autoplaySpeed: 3000,    // Set the duration (in milliseconds) between slides
+  };
+  const videos = [vedio1, vedio2];
 
   return (
     <div>
-      <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      {/* <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} /> */}
+      <Slider {...settings}>
+        {videos.map((videoSource, index) => (
+          <div key={index}>
+            <div className="carousel-slide">
+              <video autoPlay loop muted className="carousel-video">
+                <source src={videoSource} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="carousel-text">
+                <h1 className="animate__animated animate__fadeIn">Welcome to Boodmo</h1>
+                <p className="animate__animated animate__fadeIn">Boodmo is best for the Spare Parts</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </Slider>
+
       <section
         className="about__section"
         style={
@@ -131,6 +163,7 @@ const Home = ({ aboutClass }) => {
           </div>
         </div>
       </section>
+      
       <div
         style={{
           textAlign: 'center',

@@ -6,7 +6,6 @@ import Dial from './Components/Pages/Contact';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LoginSignup from './Components/Pages/Login';
 import About from './Components/Pages/About';
-import TravelInformationPage from './Components/TravelInformation/TravelInformationPage';
 import Home from './Components/Pages/Home';
 import Product from './Components/Pages/Product';
 import ReturnPolicy from './Components/Policy/Return_Policy';
@@ -16,33 +15,21 @@ import Disclaimer from './Components/Policy/Disclaimer';
 import BuyersPolicy from './Components/Policy/Buyers_Policy';
 import SellersPolicy from './Components/Policy/Sellers_Policy';
 import AntiCorruptionPolicy from './Components/Policy/Anti_corruption_Policy';
+import Cart from './Components/Pages/Cart';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const App = () => {
-  const [travelInfoData, setTravelInfoData] = useState('');
-
-  useEffect(() => {
-    const storedData = localStorage.getItem('travelInfoData');
-    if (storedData) {
-      setTravelInfoData(prevData => {
-        // Using the functional form ensures the latest state is used
-        if (prevData !== storedData) {
-          return storedData;
-        }
-        return prevData;
-      });
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('travelInfoData', travelInfoData);
-  }, [travelInfoData]);
+ 
 
   return (
     <div>
       <BrowserRouter>
         <Navbar />
+       
         <Routes>
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/contact" element={<Dial />} />
           <Route path="/product" element={<Product />} />
@@ -55,9 +42,10 @@ const App = () => {
           <Route path="/anti-corruption-policy" element={<AntiCorruptionPolicy />} />
           <Route
             path="/Home"
-            element={<TravelInformationPage data={travelInfoData} />}
+            element={<Home/>}
           />
           <Route path="/login" element={<LoginSignup />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
         <Footer />
       </BrowserRouter>
