@@ -8,7 +8,9 @@ import company from '../Assets/logo.png';
 const AntiBriberyPolicy = () => {
   return (
     <>
-      <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      <a href="/home">
+        <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      </a>
 
     <div className="anti-bribery-container">
       <h1>Anti-Bribery, Corruption, and Money Laundering Policy</h1>

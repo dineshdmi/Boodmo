@@ -27,7 +27,9 @@ class ProductList extends React.Component {
 
         return (
             <div>
-                <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+                <a href="/home">
+                    <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+                </a>
                 <section>
                     <Container>
                         <Row>

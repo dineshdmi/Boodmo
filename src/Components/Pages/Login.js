@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CSS/Login.css';
 import logo from '../Assets/logo.png';
+import company from '../Assets/logo.png'
+
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const LoginSignup = () => {
@@ -69,6 +71,10 @@ const LoginSignup = () => {
     };
 
     return (
+        <>
+            <a href="/home">
+        <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      </a>
         <div className='loginsignup'>
             <div className='loginsignup-container'>
                 {/* Left side - Form */}
@@ -149,6 +155,7 @@ const LoginSignup = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

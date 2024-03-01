@@ -37,9 +37,9 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas"  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onClick={toggleMenu}>
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon" ></span>
                 </button>
-                <div className={`offcanvas offcanvas-end ${showMenu ? 'show' : ''}`} tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div className={`offcanvas offcanvas-end ${showMenu ? 'show' : ''}`} tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" onClick={toggleMenu} data-bs-dismiss="offcanvas">
                     <div className="offcanvas-header">
                         <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                             <img src={logo} alt="Company Logo" className="company-logo" onClick={toggleMenu} data-bs-dismiss="offcanvas" />

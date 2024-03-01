@@ -7,7 +7,9 @@ import company from '../Assets/logo.png';
 const Disclaimer = () => {
   return (
     <>
-      <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      <a href="/home">
+        <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      </a>
 
       <div className="custom-disclaimer-container">
         <div className="custom-disclaimer-content">

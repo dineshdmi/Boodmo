@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/navbar';
 import Home from './Components/Pages/Home';
-import Cart from './Components/Pages/Cart';
+import Cart from './Components/CartItem/Cart';
 import { CartProvider } from './Components/Pages/CartContext';  // Import the CartProvider
 
 import 'slick-carousel/slick/slick.css';
@@ -46,7 +46,6 @@ const App = () => {
             />
             <Route path="/login" element={<LoginSignup />} />
             <Route path="/cart" element={<Cart />} />
-
           </Routes>
           <Footer />
         </BrowserRouter>

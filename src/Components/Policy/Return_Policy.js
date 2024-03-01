@@ -19,7 +19,9 @@ const PolicySection = ({ title, content }) => {
 const ReturnPolicy = () => {
   return (
     <>
-      <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      <a href="/home">
+        <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      </a>
       <div className="return-policy-container">
         <h1 className="return-policy-title">RETURN, CANCELLATION AND REFUND POLICY</h1>
         <div className="return-policy-content">

@@ -14,7 +14,9 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+        <a href="/home">
+          <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+        </a>
 
         <div className="about-us-container">
           <h1>About Us</h1>

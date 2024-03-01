@@ -6,7 +6,9 @@ import company from '../Assets/logo.png';
 const Termsofuse = () => {
   return (
     <>
-      <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      <a href="/home">
+        <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      </a>
 
     <div className='terms-container'>
       <h3> TERMS AND CONDITIONS OF USE</h3>

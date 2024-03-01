@@ -35,14 +35,10 @@
 .contact-info {
     flex: 1;
     margin-top: 10%;
-    margin-left: 1%;
+    margin-left: 10%;
 }
 .contact-info h2{
     margin-left: 4%;
-    font-size: 100%;
-}
-.contact-info li{
-    margin-left: 10%;
 }
 .contact-form {
     flex: 1;
@@ -51,7 +47,7 @@
     border-radius: 8px;
     text-align: center;
     width: 80;
-    margin-left: 3%;
+    margin-left: 2.5%;
 }
 
 .contact-form h2 {
@@ -59,16 +55,15 @@
     color: #333;
     justify-content: center;
     text-align: center;
-    margin-left: 4%;
+    margin-left: 3%;
     font-size: 140%;
 }
 
 .contact-form label {
     display: block;
     margin-bottom: 8px;
-    color: #0f0f0f;
-    margin-left: -90%;
-    font-weight: 600;
+    color: #333;
+    margin-right: 100%;
     
 }
 

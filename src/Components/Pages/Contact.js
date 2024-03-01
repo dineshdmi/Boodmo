@@ -9,7 +9,9 @@ import './CSS/Contact.css';
 const ContactPage = () => {
   return (
     <>
-      <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      <a href="/home">
+        <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      </a>
 
       <div className="card">
         <h2>For Assistance</h2>

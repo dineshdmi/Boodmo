@@ -53,7 +53,9 @@ const Home = ({ aboutClass }) => {
 
   return (
     <div>
-      {/* <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} /> */}
+      {/* <a href="/home">
+        <img src={company} alt="Top Image" style={{ width: '10%', height: 'auto' }} />
+      </a> */}
       <Slider {...settings}>
         {videos.map((videoSource, index) => (
           <div key={index}>
@@ -63,8 +65,10 @@ const Home = ({ aboutClass }) => {
                 Your browser does not support the video tag.
               </video>
               <div className="carousel-text">
-                <h1 className="animate__animated animate__fadeIn">Welcome to Boodmo</h1>
-                <p className="animate__animated animate__fadeIn">Boodmo is best for the Spare Parts</p>
+                <h1 className="animate__animated animate__fadeIn" style={{
+                  color:'#3c3c'
+                }}>Welcome <br/>to<br/> Boodmo</h1>
+                <p className="animate__animated">Boodmo is best for the Spare Parts</p>
               </div>
             </div>
           </div>
