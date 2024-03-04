@@ -1,12 +1,10 @@
 import React from 'react';
 import company from '../Assets/logo.png'
-
 import info1 from '../Assets/info1.jpg';
 import info2 from '../Assets/info2.jpg';
 import info3 from '../Assets/info3.jpg';
 import play from '../Assets/playstore.jpg';
 import apple from '../Assets/apple.jpg';
-
 
 import './CSS/About.css';
 

@@ -1,15 +1,15 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 import "./Cartitem.css";
+import { useCart } from '../Pages/CartContext';
 
 const CarItem = (props) => {
     const { imgUrl, model, carName, automatic, speed, price } = props.item;
     const navigate = useNavigate();
+    const { addToCart } = useCart();
 
     const handleAddToCart = () => {
-        // Implement adding product to cart logic
-        console.log('Added to cart:', props.item);
-
+        addToCart(props.item);
         // Redirect to the cart page after adding to cart
         navigate('/cart');
     };

@@ -1,10 +1,11 @@
 // Footer.js
-
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { RiCarLine, RiSendPlaneLine, RiCopyrightLine, RiArrowUpSLine } from 'react-icons/ri';
 import './Footer.css';
+import Chat from '../Pages/Chat';
+import { GrContact } from "react-icons/gr";
 
 const quickLinks = [
   { path: '/home', display: 'Home' },
@@ -28,6 +29,7 @@ const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   const [showScroll, setShowScroll] = useState(false);
+  const [showChat, setShowChat] = useState(false);
 
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 400) {
@@ -48,6 +50,14 @@ const Footer = () => {
     };
   }, [showScroll]);
 
+  const closeChat = () => {
+    setShowChat(false);
+  };
+
+  const toggleChat = () => {
+    setShowChat(!showChat);
+  };
+
   return (
     <footer className="footer">
       <Container>
@@ -65,7 +75,7 @@ const Footer = () => {
               India's biggest online marketplace <br /> for car spare parts
             </p>
           </Col>
-    
+
           <Col lg="2" md="4" sm="6">
             <div className="mb-4">
               <h5 className="footer__link-title">Quick Links</h5>
@@ -118,6 +128,18 @@ const Footer = () => {
             </div>
           </Col>
 
+          <Col lg="3" md="4" sm="12">
+            <div className="mb-4">
+              <div className="chat-icon" onClick={toggleChat}>
+                <GrContact style={{ cursor: 'pointer', fontSize: '24px', color: '#007BFF' }} />
+                
+              </div>
+            </div>
+            {showChat && (
+              <Chat onClose={closeChat} />
+            )}
+          </Col>
+
           <Col lg="12">
             <div className="footer__bottom">
               <p className="section__description d-flex align-items-center justify-content-center gap-1 pt-2">
@@ -132,6 +154,7 @@ const Footer = () => {
           </div>
         )}
       </Container>
+      {showChat && <Chat />}
     </footer>
   );
 };

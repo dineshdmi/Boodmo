@@ -2,7 +2,6 @@
 
 import React from 'react';
 import company from '../Assets/logo.png'
-
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import './CSS/Contact.css';
 

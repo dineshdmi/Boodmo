@@ -18,7 +18,7 @@
 .navbar-nav {
     margin-left: auto;
     font-size: 120%;
-    
+
 }
 
 /* Logo Section */
@@ -100,6 +100,10 @@
 
 .login-form button:hover {
     color: #2f14de;
+}
+.cart {
+    margin-left: 580%;
+    margin-top: -50%;
 }
 
 /* Responsive Styles */

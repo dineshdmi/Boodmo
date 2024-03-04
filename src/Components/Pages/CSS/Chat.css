@@ -1,0 +1,52 @@
+/* Chat.css */
+
+.chat-container {
+    /* Your styling for the chat container */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    /* Your styling for the chat header */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-messages {
+    /* Your styling for the chat messages */
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.chat-input {
+    /* Your styling for the chat input area */
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    /* Your styling for the input field */
+    flex: 1;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.chat-input button {
+    /* Your styling for the send button */
+    padding: 8px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

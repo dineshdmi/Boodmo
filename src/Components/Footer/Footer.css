@@ -108,6 +108,26 @@
 .scroll-to-top:hover {
   background-color: #0056b3;
 }
+.chat-icon {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  cursor: pointer;
+  background-color: #ffb300;
+  color: #fff;
+  border: none;
+  border-radius: 10%;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-icon:hover {
+  background-color: #0056b3;
+}
 
 @media only screen and (max-width: 768px) {
   .footer {

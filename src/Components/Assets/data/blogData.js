@@ -7,7 +7,7 @@ const blogData = [
   {
     id: 1,
     title: "Understanding Your Workshop Needs",
-    author: "Muhib",
+    author: "Dinesh",
     date: "12 Jan, 2024",
     time: "9pm",
     imgUrl: img01,
@@ -20,7 +20,7 @@ const blogData = [
   {
     id: 2,
     title: "Brightness & Color Temperature",
-    author: "Muhib",
+    author: "Dinesh",
     date: "12 Jan, 2024",
     time: "9pm",
     imgUrl: img02,
@@ -33,7 +33,7 @@ const blogData = [
   {
     id: 3,
     title: "Making the Final Decision",
-    author: "Muhib",
+    author: "Dinesh",
     date: "12 Jan, 2024",
     time: "9pm",
     imgUrl: img03,

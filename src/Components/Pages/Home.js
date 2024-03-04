@@ -16,7 +16,7 @@ import logo1 from '../Assets/downloadsecure.jpg'
 import logo2 from '../Assets/available.jpg'
 import { Container, Row, Col } from "reactstrap";
 import aboutImg from "../Assets/mech1.jpg";
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import './CSS/Home.css'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -67,7 +67,7 @@ const Home = ({ aboutClass }) => {
               <div className="carousel-text">
                 <h1 className="animate__animated animate__fadeIn" style={{
                   color:'#3c3c'
-                }}>Welcome <br/>to<br/> Boodmo</h1>
+                }}>Welcome <br/>To<br/> Boodmo</h1>
                 <p className="animate__animated">Boodmo is best for the Spare Parts</p>
               </div>
             </div>
