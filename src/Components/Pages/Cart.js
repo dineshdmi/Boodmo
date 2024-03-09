@@ -8,22 +8,10 @@ const Cart = () => {
     const { state, removeFromCart, updateQuantity } = useCart();
     const navigate = useNavigate();
 
-    // Calculate total amount
     const totalAmount = state.cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
-    // Function to proceed to buy and navigate to the address page
     const proceedToBuy = () => {
-        navigate('/address');
-    };
-
-    // Function to navigate back to the product 
-    const addMoreProducts = () => {
-        navigate('/product');
-    };
-
-    // Function to update the quantity of a product
-    const updateProductQuantity = (productId, newQuantity) => {
-        updateQuantity(productId, newQuantity);
+        navigate('/address', { state: { products: state.cartItems } });
     };
 
     return (
@@ -42,9 +30,9 @@ const Cart = () => {
                                     <p>Model: {item.model}</p>
                                     <p>Price: ${item.price}.00</p>
                                     <div className="quantity-controls">
-                                        <button onClick={() => updateProductQuantity(item.id, item.quantity - 1)}>-</button>
+                                        <button onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</button>
                                         <span>{item.quantity}</span>
-                                        <button onClick={() => updateProductQuantity(item.id, item.quantity + 1)}>+</button>
+                                        <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
                                     </div>
                                     <button onClick={() => removeFromCart(item.id)}>Remove</button>
                                 </div>
@@ -54,7 +42,6 @@ const Cart = () => {
                     <div className="cart-summary">
                         <p>Total Amount: ${totalAmount}.00</p>
                         <button onClick={proceedToBuy}>Proceed to Buy</button>
-                        <button onClick={addMoreProducts}>Add More Products</button>
                     </div>
                 </div>
             )}

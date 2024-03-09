@@ -1,137 +1,145 @@
-/* Navbar Container */
+/* Navbar.css */
+
+/* Navbar container */
 .navbar {
-    background-color: #fff;
+    padding: 1rem;
+    background-color: #ffffff;
+    /* Set your desired background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px 20px;
-    transition: background-color 0.3s;
+    /* Add a subtle box shadow */
 }
 
-/* Navbar Content */
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Company name styling */
+.company-name h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #333333;
+    margin-left: -9%;
+    margin-top: 8%;
 }
 
+/* Navbar links styling */
 .navbar-nav {
-    margin-left: auto;
-    font-size: 120%;
-
-}
-
-/* Logo Section */
-.nav-logo {
-    display: flex;
-    align-items: center;
-}
-
-.nav-logo img {
-    width: 70px;
-    height: 50px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-/* Navigation Menu */
-.nav-menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    margin-left: 25%;
 }
 
-.nav-menu ul {
+.nav-item {
+    margin-right: 1.5rem;
+}
+
+/* Cart and Profile icon styling */
+.cart,
+.profile-icon {
+    height: 2rem;
+    /* Set your desired icon height */
+    margin-left: auto;
+    /* Align icons to the right */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* Add cursor pointer for better user interaction */
+}
+
+/* Offcanvas styles */
+.offcanvas-header {
+    padding-bottom: 0;
+}
+
+.offcanvas-title {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    cursor: pointer;
+    max-height: 2rem;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 12rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .5rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    transition: background-color 0.3s ease;
+    /* Add smooth transition */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #007bff;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+/* Cart and Profile icon styling */
+.cart,
+.profile-icon {
+    height: 2rem;
+    /* Set your desired icon height */
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.nav-menu li {
-    margin-right: 20px;
-}
-
-.navbar-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    font-size: 18px;
-    transition: color 0.3s, border-bottom 0.3s;
-    /* Add transition for smooth effect */
-}
-
-/* Add an underline to the active link */
-.navbar-nav a.active {
-    border-bottom: 2px solid #00ff55;
-}
-
-.navbar-nav a:hover {
-    color: #007bff;
-    box-sizing: content-box;
-    border-bottom: 2px solid #007bff;
-}
-
-/* Profile Section */
-.profile-section {
-    margin-left: auto;
-}
-
-.profile-section img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
     cursor: pointer;
+    /* Add cursor pointer for better user interaction */
 }
 
-/* Login Form */
-.login-form {
-    margin-left: 20px;
+
+.profile-icon
+ {
+    margin-left: 53%;
+    margin-top: 4%;
+    /* Add some spacing between cart and profile icons */
 }
 
-.login-form button {
-    color: #faf6f6;
-    background-color: rgb(14, 27, 202);
-    margin-top: 30px;
-}
-
-.login-form button:hover {
-    color: #2f14de;
-}
-.cart {
-    margin-left: 580%;
-    margin-top: -50%;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none;
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .navbar-nav {
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1;
     }
 
-    .nav-menu.show {
-        display: flex;
+    .nav-item {
+        margin: 0.5rem 0;
     }
 
-    .nav-menu.vertical {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    .company-name {
+        margin-right: 0;
+        margin-bottom: 1rem;
     }
 
-    .nav-menu.vertical li {
-        margin: 0;
-        text-align: center;
-        padding: 10px;
+    .cart,
+    .profile-icon {
+        margin-left: 0;
+        margin-top: 1rem;
+        /* Add some spacing between icons */
     }
 }

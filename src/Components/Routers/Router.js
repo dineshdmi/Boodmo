@@ -20,6 +20,7 @@ import BuyersPolicy from '../Policy/Buyers_Policy';
 import SellersPolicy from '../Policy/Sellers_Policy';
 import AntiCorruptionPolicy from '../Policy/Anti_corruption_Policy';
 import AddressPage from '../Pages/Address';
+import PaymentPage from '../Pages/Payment';
 
 
 const App = () => {
@@ -44,6 +45,7 @@ const App = () => {
                         <Route path="/login" element={<LoginSignup />} />
                         <Route path="/cart" element={<Cart />} />
                         <Route path="/address" element={<AddressPage />} />
+                        <Route path='/payment' element={<PaymentPage/>}/>
                     </Routes>
                     <Footer />
                 </BrowserRouter>
